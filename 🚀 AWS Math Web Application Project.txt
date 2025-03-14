@@ -1,0 +1,65 @@
+🚀 AWS Math Web Application Project Overview
+In this hands-on project,
+
+AWS Amplify – To host your web application.
+AWS Lambda – For performing backend math calculations.
+AWS IAM (Identity and Access Management) – To manage permissions securely.
+Amazon API Gateway – To expose your Lambda function as a REST API.
+Amazon DynamoDB – To store and retrieve math calculation results.
+By the end of the project, you’ll have a fully functional web application that:
+✅ Accepts user input for math calculations (e.g., powers of numbers).
+✅ Processes the input using a Lambda function (Python).
+✅ Stores the result in a DynamoDB table.
+✅ Displays the calculation history on the webpage.
+
+📚 Project Prerequisites
+To follow along, you’ll need:
+✔️ An AWS account (with administrator permissions).
+✔️ A text editor (e.g., Notepad++, VS Code, etc.).
+✔️ Basic knowledge of AWS (optional but helpful).
+
+🛠️ Architecture Flow of the Application
+Frontend (index.html) – User inputs a number on a hosted webpage via AWS Amplify.
+API Gateway – Routes user requests to the Lambda function.
+Lambda (Python) – Processes the math calculation (e.g., calculates powers).
+DynamoDB – Stores the calculation result for future reference.
+IAM – Ensures Lambda can access DynamoDB securely.
+📝 Step-by-Step Implementation
+Host Your Webpage Using AWS Amplify
+
+Create an index.html file to capture user input.
+Deploy the webpage using AWS Amplify’s hosting feature.
+Create a Python Lambda Function
+
+Write a Lambda function that takes a number and calculates its power.
+Test the function in the AWS Lambda console.
+Set Up API Gateway
+
+Create a REST API using Amazon API Gateway.
+Connect it to your Lambda function to handle user requests.
+Create and Configure a DynamoDB Table
+
+Set up a table to store the input and output of math operations.
+Update your Lambda function to save results to this table.
+Manage Permissions Using IAM
+
+Create an execution role allowing Lambda to interact with DynamoDB.
+Attach the role to your Lambda function.
+Integrate and Test the Application
+
+Update your index.html to call the API Gateway endpoint.
+Deploy the updated webpage and verify the complete flow.
+🧹 Clean-Up Resources
+Delete your Amplify app, Lambda function, API Gateway endpoint, and DynamoDB table to avoid unnecessary costs.
+📂 Helpful Resources & Code 
+index-ORIGINAL.html
+PowerOfMathFunction - Lambda-ORIGINAL.txt
+Execution Role Policy JSON.txt
+PowerOfMathFunction - Lambda-FINAL.txt
+index.html (Final Version)
+📌 Learning Outcomes
+By completing this project, you will:
+✅ Understand how to integrate key AWS services.
+✅ Build and deploy a real-world application from scratch.
+✅ Gain hands-on experience with serverless architecture.
+✅ Learn best practices for security and permissions.
